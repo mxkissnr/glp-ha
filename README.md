@@ -63,11 +63,11 @@ The core — syncs shot history, stores it locally, and serves the full web UI i
 
 Polls the add-on every 60 s and exposes all data as native HA sensors — shot count, last shot stats, score, maintenance status, preheat state and more. Required for the Lovelace cards to auto-detect configuration.
 
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=gaggiuino-profiler-integration&category=integration">
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=glp-integration&category=integration">
   <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Integration via HACS" height="40"/>
 </a>
 
-→ [mxkissnr/gaggiuino-profiler-integration](https://github.com/mxkissnr/gaggiuino-profiler-integration)
+→ [mxkissnr/glp-integration](https://github.com/mxkissnr/glp-integration)
 
 ---
 
@@ -183,7 +183,7 @@ Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry i
 |---|---|
 | 📖 Documentation | [Wiki](https://github.com/mxkissnr/gaggiuino-local-profiler/wiki) |
 | 🐛 Add-on issues | [gaggiuino-local-profiler/issues](https://github.com/mxkissnr/gaggiuino-local-profiler/issues) |
-| 🐛 Integration issues | [gaggiuino-profiler-integration/issues](https://github.com/mxkissnr/gaggiuino-profiler-integration/issues) |
+| 🐛 Integration issues | [glp-integration/issues](https://github.com/mxkissnr/glp-integration/issues) |
 | 🐛 Shot Card issues | [glp-lovelace-card/issues](https://github.com/mxkissnr/glp-lovelace-card/issues) |
 | 🐛 Order Card issues | [glp-order-card/issues](https://github.com/mxkissnr/glp-order-card/issues) |
 
