@@ -169,7 +169,8 @@ Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry i
 | 📷 | Barcode / QR scanner — EAN lookup via Open Food Facts; GLP QR schema | Add-on |
 | 🔗 | kaffeebraun.com import | Add-on |
 | 📱 | PWA — installable as standalone app on Android & iOS | Add-on |
-| 🌐 | Multi-language UI — DE / EN / IT / FR / ES | Add-on |
+| 🌐 | Multi-language UI — DE / EN / IT / FR / ES / NL | Add-on |
+| 🎨 | Accent color themes — Amber, Ocean, Aurora, Ember, Forest | Add-on |
 | 📋 | Order management — barista backend with queue, ETA, accept/decline | Add-on |
 | 📡 | Native HA sensors for all GLP data — usable in automations & dashboards | Integration |
 | 🃏 | Machine status card — preheat progress, last shot, profile selector, power button | Shot Card |
