@@ -115,7 +115,7 @@ Click the button under **① GLP Add-on** above, or manually add this repository
 https://github.com/mxkissnr/gaggiuino-local-profiler
 ```
 
-Settings → Add-ons → Add-on Store → ⋮ → Repositories → paste URL → search for **Gaggiuino Local Profiler** → Install.
+Settings → Apps → App Store → ⋮ → Repositories → paste URL → search for **Gaggiuino Local Profiler** → Install.
 
 Configure:
 ```yaml
@@ -166,6 +166,8 @@ Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry i
 | 🔧 | Per-grinder cleaning schedule | Add-on |
 | 🔌 | Smart plug control — power machine on/off from GLP | Add-on |
 | ☕ | Preheat timer — progress bar + countdown | Add-on |
+| 🎯 | Dial-in assistant — compare a target shot with recent attempts | Add-on |
+| 📋 | Recipes — brew method, dose, yield, steps for Espresso, AeroPress, V60 and more | Add-on |
 | 📷 | Barcode / QR scanner — EAN lookup via Open Food Facts; GLP QR schema | Add-on |
 | 🔗 | kaffeebraun.com import | Add-on |
 | 📱 | PWA — installable as standalone app on Android & iOS | Add-on |
