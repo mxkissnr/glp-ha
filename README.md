@@ -31,7 +31,7 @@ Gaggiuino Machine
           │  sync every N min + live polling
           ▼
 ┌──────────────────────────────────────┐
-│          GLP Add-on  ①               │  ← Shot archive, live view, analytics,
+│          GLP App  ①               │  ← Shot archive, live view, analytics,
 │  Node.js · Port 8099 · HA Ingress    │    library, dial-in, maintenance,
 │  /data/shots.json                    │    barista order backend
 └────────────┬─────────────────────────┘
@@ -47,7 +47,7 @@ automations          in any dashboard
 
 ## Components
 
-### ① GLP Add-on
+### ① GLP App
 
 The core — syncs shot history, stores it locally, and serves the full web UI including shot archive, live mode, analytics, coffee library, maintenance tracker and barista order backend.
 
@@ -61,7 +61,7 @@ The core — syncs shot history, stores it locally, and serves the full web UI i
 
 ### ② GLP HA Integration
 
-Polls the add-on every 60 s and exposes all data as native HA sensors — shot count, last shot stats, score, maintenance status, preheat state and more. Required for the Lovelace cards to auto-detect configuration.
+Polls the app every 60 s and exposes all data as native HA sensors — shot count, last shot stats, score, maintenance status, preheat state and more. Required for the Lovelace cards to auto-detect configuration.
 
 <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=glp-integration&category=integration">
   <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Integration via HACS" height="40"/>
@@ -107,9 +107,9 @@ type: custom:glp-order-card
 
 ## Full installation guide
 
-### Step 1 — Add the GLP Add-on
+### Step 1 — Add the GLP App
 
-Click the button under **① GLP Add-on** above, or manually add this repository to HA:
+Click the button under **① GLP App** above, or manually add this repository to HA:
 
 ```
 https://github.com/mxkissnr/gaggiuino-local-profiler
@@ -145,7 +145,7 @@ Both cards auto-detect all configuration — no manual entity IDs or URLs needed
 
 ### Step 4 — Open the GLP web UI
 
-Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry in your HA sidebar.
+Click **Open Web UI** on the app page, or navigate to the **☕ GLP** entry in your HA sidebar.
 
 ---
 
@@ -153,27 +153,27 @@ Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry i
 
 | | Feature | Component |
 |---|---|---|
-| 📈 | Shot archive with pressure, flow, weight & temperature curves | Add-on |
-| 🔴 | Live mode — real-time charts during extraction | Add-on |
-| 🏆 | Shot score (0–100) — pressure, stability, duration, ratio, channeling | Add-on |
-| 📊 | Analytics — score trend, calendar heatmap, bean stats, profile performance | Add-on |
-| 📊 | P·Q Diagram — pressure vs. flow extraction signature | Add-on |
-| ⚗️ | Extraction yield % (TDS + dose) | Add-on |
-| ☕ | Coffee library — bean & grinder database with autocomplete | Add-on |
-| 📝 | Shot annotations — coffee, grinder, dose, roast date, TDS, notes, 1–5 stars | Add-on |
-| 💾 | .shot export (Decent / Visualizer.coffee) + CSV export | Add-on |
-| 🔧 | Maintenance tracker — descaling, backflush, group head, gaskets, water filter | Add-on |
-| 🔧 | Per-grinder cleaning schedule | Add-on |
-| 🔌 | Smart plug control — power machine on/off from GLP | Add-on |
-| ☕ | Preheat timer — progress bar + countdown | Add-on |
-| 🎯 | Dial-in assistant — compare a target shot with recent attempts | Add-on |
-| 📋 | Recipes — brew method, dose, yield, steps for Espresso, AeroPress, V60 and more | Add-on |
-| 📷 | Barcode / QR scanner — EAN lookup via Open Food Facts; GLP QR schema | Add-on |
-| 🔗 | kaffeebraun.com import | Add-on |
-| 📱 | PWA — installable as standalone app on Android & iOS | Add-on |
-| 🌐 | Multi-language UI — DE / EN / IT / FR / ES / NL | Add-on |
-| 🎨 | Accent color themes — Amber, Ocean, Aurora, Ember, Forest | Add-on |
-| 📋 | Order management — barista backend with queue, ETA, accept/decline | Add-on |
+| 📈 | Shot archive with pressure, flow, weight & temperature curves | App |
+| 🔴 | Live mode — real-time charts during extraction | App |
+| 🏆 | Shot score (0–100) — pressure, stability, duration, ratio, channeling | App |
+| 📊 | Analytics — score trend, calendar heatmap, bean stats, profile performance | App |
+| 📊 | P·Q Diagram — pressure vs. flow extraction signature | App |
+| ⚗️ | Extraction yield % (TDS + dose) | App |
+| ☕ | Coffee library — bean & grinder database with autocomplete | App |
+| 📝 | Shot annotations — coffee, grinder, dose, roast date, TDS, notes, 1–5 stars | App |
+| 💾 | .shot export (Decent / Visualizer.coffee) + CSV export | App |
+| 🔧 | Maintenance tracker — descaling, backflush, group head, gaskets, water filter | App |
+| 🔧 | Per-grinder cleaning schedule | App |
+| 🔌 | Smart plug control — power machine on/off from GLP | App |
+| ☕ | Preheat timer — progress bar + countdown | App |
+| 🎯 | Dial-in assistant — compare a target shot with recent attempts | App |
+| 📋 | Recipes — brew method, dose, yield, steps for Espresso, AeroPress, V60 and more | App |
+| 📷 | Barcode / QR scanner — EAN lookup via Open Food Facts; GLP QR schema | App |
+| 🔗 | kaffeebraun.com import | App |
+| 📱 | PWA — installable as standalone app on Android & iOS | App |
+| 🌐 | Multi-language UI — DE / EN / IT / FR / ES / NL | App |
+| 🎨 | Accent color themes — Amber, Ocean, Aurora, Ember, Forest | App |
+| 📋 | Order management — barista backend with queue, ETA, accept/decline | App |
 | 📡 | Native HA sensors for all GLP data — usable in automations & dashboards | Integration |
 | 🃏 | Machine status card — preheat progress, last shot, profile selector, power button | Shot Card |
 | 🛒 | Customer order card — menu, order placement, status tracking | Order Card |
@@ -185,7 +185,7 @@ Click **Open Web UI** on the add-on page, or navigate to the **☕ GLP** entry i
 | | |
 |---|---|
 | 📖 Documentation | [Wiki](https://github.com/mxkissnr/gaggiuino-local-profiler/wiki) |
-| 🐛 Add-on issues | [gaggiuino-local-profiler/issues](https://github.com/mxkissnr/gaggiuino-local-profiler/issues) |
+| 🐛 App issues | [gaggiuino-local-profiler/issues](https://github.com/mxkissnr/gaggiuino-local-profiler/issues) |
 | 🐛 Integration issues | [glp-integration/issues](https://github.com/mxkissnr/glp-integration/issues) |
 | 🐛 Shot Card issues | [glp-lovelace-card/issues](https://github.com/mxkissnr/glp-lovelace-card/issues) |
 | 🐛 Order Card issues | [glp-order-card/issues](https://github.com/mxkissnr/glp-order-card/issues) |
