@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mxkissnr/gaggiuino-local-profiler/main/gaggiuino-local-profiler/logo.svg" alt="Gaggiuino Local Profiler" width="660"/>
+  <img src="logo.svg" alt="Gaggiuino Local Profiler" width="660"/>
 </p>
 
 <p align="center">
