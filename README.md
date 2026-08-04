@@ -15,6 +15,8 @@
 
 ---
 
+> **AI-generated project.** All code, tests, and documentation in this repo are written by Claude (Anthropic). Scope, hardware testing (Gaggia Classic + Gaggiuino), and release decisions are done by a human maintainer. Keep that in mind before installing this on your machine.
+
 ## What is GLP?
 
 GLP turns your [Gaggiuino](https://gaggiuino.github.io/)-modded espresso machine into a fully integrated Home Assistant appliance.  
