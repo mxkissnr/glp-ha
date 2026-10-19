@@ -196,7 +196,7 @@ Click **Open Web UI** on the app page, or navigate to the **☕ GLP** entry in y
 
 ## License
 
-GPL-3.0 © 2024–2026 mxkissnr — free to use, fork and modify; any derivative work must remain open source under the same license. Commercial use is not permitted.
+GPL-3.0 © 2024–2026 mxkissnr — free to use, fork and modify; any derivative work must remain open source under the same license.
 
 ## Acknowledgements
 
