@@ -63,47 +63,39 @@ The core — syncs shot history, stores it locally, and serves the full web UI i
 
 ### ② GLP HA Integration
 
-Polls the app every 60 s and exposes all data as native HA sensors — shot count, last shot stats, score, maintenance status, preheat state and more. Required for the Lovelace cards to auto-detect configuration.
+Polls the app every 60 s and exposes all data as native HA sensors — shot count, last shot stats, score, maintenance status, preheat state and more. Required for the Lovelace cards to auto-detect configuration. It also ships both Lovelace cards (③ and ④) — installing or updating the integration via HACS registers them as dashboard resources, no separate card install needed.
 
 <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=glp-integration&category=integration">
   <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Integration via HACS" height="40"/>
 </a>
 
-→ [mxkissnr/glp-integration](https://github.com/mxkissnr/glp-integration)
+→ [mxkissnr/glp-integration](https://github.com/mxkissnr/glp-integration) · beta builds: enable **Show beta versions** in HACS
 
 ---
 
 ### ③ GLP Shot Card
 
-Lovelace card showing machine status, last shot summary, preheat progress, power button and active profile selector.
-
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=glp-lovelace-card&category=frontend">
-  <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Card via HACS" height="40"/>
-</a>
+Lovelace card (bundled with the GLP Integration) showing machine status, last shot summary, preheat progress, power button and active profile selector.
 
 ```yaml
 type: custom:glp-card
 # no further config needed — auto-detected from integration
 ```
 
-→ [mxkissnr/glp-lovelace-card](https://github.com/mxkissnr/glp-lovelace-card)
+→ [Shot Card documentation](https://github.com/mxkissnr/glp-integration/blob/main/DOCS.md#shot-card)
 
 ---
 
 ### ④ GLP Order Card
 
-Customer-facing Lovelace card for ordering espresso. Customers pick a drink from the barista-configured menu, optionally add a note, and track their order status in real time.
-
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mxkissnr&repository=glp-order-card&category=frontend">
-  <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Card via HACS" height="40"/>
-</a>
+Customer-facing Lovelace card (bundled with the GLP Integration) for ordering espresso. Customers pick a drink from the barista-configured menu, optionally add a note, and track their order status in real time.
 
 ```yaml
 type: custom:glp-order-card
 # no further config needed — auto-detected via HA ingress
 ```
 
-→ [mxkissnr/glp-order-card](https://github.com/mxkissnr/glp-order-card)
+→ [Order Card documentation](https://github.com/mxkissnr/glp-integration/blob/main/DOCS.md#order-card)
 
 ---
 
@@ -133,7 +125,7 @@ Click the button under **② GLP HA Integration** above. After installation go t
 
 ### Step 3 — Add the Lovelace cards
 
-Click the HACS buttons under **③** and **④**. Then add to any Lovelace dashboard:
+Both cards come with the integration from Step 2 — nothing more to install. Just add to any Lovelace dashboard:
 
 ```yaml
 # Shot status card
@@ -189,8 +181,8 @@ Click **Open Web UI** on the app page, or navigate to the **☕ GLP** entry in y
 | 📖 Documentation | [Wiki](https://github.com/mxkissnr/gaggiuino-local-profiler/wiki) |
 | 🐛 App issues | [gaggiuino-local-profiler/issues](https://github.com/mxkissnr/gaggiuino-local-profiler/issues) |
 | 🐛 Integration issues | [glp-integration/issues](https://github.com/mxkissnr/glp-integration/issues) |
-| 🐛 Shot Card issues | [glp-lovelace-card/issues](https://github.com/mxkissnr/glp-lovelace-card/issues) |
-| 🐛 Order Card issues | [glp-order-card/issues](https://github.com/mxkissnr/glp-order-card/issues) |
+| 🐛 Shot Card issues | [glp-integration/issues](https://github.com/mxkissnr/glp-integration/issues) |
+| 🐛 Order Card issues | [glp-integration/issues](https://github.com/mxkissnr/glp-integration/issues) |
 
 ---
 
