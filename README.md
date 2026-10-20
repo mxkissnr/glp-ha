@@ -69,7 +69,7 @@ Polls the app every 60 s and exposes all data as native HA sensors — shot coun
   <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Add Integration via HACS" height="40"/>
 </a>
 
-→ [mxkissnr/glp-integration](https://github.com/mxkissnr/glp-integration) · beta builds: enable **Show beta versions** in HACS
+→ [mxkissnr/glp-integration](https://github.com/mxkissnr/glp-integration) · beta builds: in HACS ⋮ → **Redownload** → *Need a different version?* → pick a `v…b…` release
 
 ---
 
