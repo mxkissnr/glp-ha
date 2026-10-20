@@ -11,9 +11,11 @@ tables, or links, or replacing `logo.svg`.
 
 ## Purpose and audience
 
-This is the *first thing a prospective user sees* — it links out to the four real GLP repos
-(`gaggiuino-local-profiler`, `glp-integration`, `glp-lovelace-card`, `glp-order-card`) and gives
-the one-page overview of what the ecosystem does and how to install all four pieces. It is not
+This is the *first thing a prospective user sees* — it links out to the two active GLP repos
+(`gaggiuino-local-profiler`, `glp-integration`) and gives the one-page overview of what the
+ecosystem does and how to install both pieces. The two Lovelace cards (Shot Card, Order Card)
+live in `glp-integration/cards` and ship with the integration; the old `glp-lovelace-card` and
+`glp-order-card` repos are archived. It is not
 where features, changelogs, or fixes live — those belong in the component repos.
 
 ## Keeping it in sync
