@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this repo is
 
 The GLP ecosystem landing page — `README.md` (rendered as the repo's front page on GitHub) plus
-`logo.svg`. There is no application code, no build, no tests, and no CI beyond Dependabot/CodeQL
+`logo.svg`. There is no application code, no build, no tests, and no CI beyond Renovate/CodeQL
 housekeeping for the `.github` workflows. Editing this repo means editing `README.md` prose,
 tables, or links, or replacing `logo.svg`.
 
